@@ -45,7 +45,7 @@ li a:hover {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -55,10 +55,11 @@ li a:hover {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: left;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1
+  background-color: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
@@ -68,7 +69,7 @@ li a:hover {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+
 }
 
 
