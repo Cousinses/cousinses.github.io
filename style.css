@@ -1,22 +1,26 @@
 
-/* Trial navbar */
+* {
+  font-family: 'Balthazar', serif;
+}
 
-ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #333;
+  background-color:#0c1a1e;
   position: fixed;
   width: 100%;
 }
 
-li {
+.navbar li {
   display: inline-block;
+  font-size: 17px;
 }
 
 .navbar {
   text-align: center;
   display: inline-block;
+  z-index: 20;
 }
 
 .navbarlogo {
@@ -24,23 +28,35 @@ li {
   max-width: 60px;
 }
 
-li:last-child {
-  border-right: none;
-}
-
 li a {
   display: block;
-  color: white;
+  color: #a0a3a4;
+  transition: color 0.2s linear 0s, background 0.2s linear 0s;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  color: black;
+  color: #337ab7;
+  transition: color 0.2s linear 0s, background 0.2s linear 0s;
   /*background-color: #6ab587;*/
   background-color: #f1f1f1;
+  text-decoration: none;
 }
+
+.sitemap-ul li a {
+  padding: 14px 0px;
+}
+
+.sitemap-ul li a:hover {
+
+}
+
+
+
+
+
 
 .dropbtn {
     cursor: pointer;
@@ -54,15 +70,15 @@ li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #0c1a1e;
     min-width: 50px;
     max-width: 85px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 20;
 }
 
 .dropdown-content a {
-    color: white;
+    color: #a0a3a4;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -72,18 +88,28 @@ li a:hover {
 .dropdown-content a:hover {
   background-color: #f1f1f1;
   /*background-color: #6ab587;*/
-  color: black;
+  color: #337ab7;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
     position: absolute;
     top: 45px;
-    background-color: #333;
+    background-color: #0c1a1e;
 }
 
-.dropdown:hover .dropbtn {
+.carousel-inner img {
+  height: 600px;
+}
 
+.carousel-caption a {
+  font-size: 2rem;
+  color: white;
+
+}
+
+.carousel-caption a:hover {
+  color: #0c1a1e;
 }
 
 .jumbotron {
@@ -92,9 +118,165 @@ li a:hover {
   color: white;
   width: 100%;
   height: auto;
+}
 
 .body {
    background-color: rgb(238,238,238);
 }
 
-/* color scheme tbd, there's too many options! I got sidetracked... */
+.item .btn-default {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.body-container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.content-container {
+  float:left;
+  width:60%;
+  margin-right:5%;
+  padding: 10px;
+  min-height: 700px;
+}
+
+.image-container {
+  float:left;
+  width:35%;
+}
+
+.image-container img {
+  margin-top: 50px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+body h1 {
+  font-size: 3.7em;
+}
+
+body p {
+  font-size: 1.3em;
+}
+
+
+
+/* Footer */
+
+footer {
+  background-color:#0c1a1e;
+  min-height:200px;
+  max-height: 400px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-left {
+  margin-top: 50px;
+  padding: 0 36px;
+}
+
+.logo-footer img {
+  max-width: 200px;
+  padding-top: 50px;
+}
+
+.paddingtop-bottom {
+  margin-top: 50px;
+}
+
+.sitemap-ul {
+  list-style-type: none;
+  position: relative;
+  float: left;
+  margin-left: 0px;
+  padding-left:0px;
+}
+
+.sitemap-ul li {
+  line-height: 0.6rem;
+  font-size: 17px;
+  color: #a0a3a4;
+  position: relative;
+
+}
+
+.sitemap-ul li a {
+  color: #a0a3a4;
+  transition: color 0.2s linear 0s, background 0.2s linear 0s;
+}
+
+.sitemap-ul li a:hover {
+  transition: color 0.2s linear 0s, background 0.2s linear 0s;
+  color: #337ab7;
+}
+
+ .footer-heading {
+   font-size: 21px;
+   font-weight: 700;
+   color: #d9d6d6;
+   margin-bottom: 22px;
+ }
+
+ .contact {
+   font-size: 17px;
+   color: #a0a3a4;
+   line-height: 2rem;
+ }
+
+ .contact {
+   list-style-type: none;
+   float: right;
+   margin-bottom: 0px;
+ }
+
+ .contact li {
+   float: left;
+ }
+
+ul.contact li.location {
+  background: url(location.png) 1px 3px no-repeat;
+  padding-left:39px;
+}
+
+ul.contact li.email {
+  background: url(email.png) 0px 15px no-repeat;
+}
+
+ul.contact li {
+  padding-left: 25px;
+  margin-bottom: 9px;
+}
+
+.social-media {
+  margin: 5px 0 15px;
+}
+
+.social-media img {
+  margin: 90px 0px 0px 30px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+#submitemail {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  padding-top: 70px;
+  margin-left: 30px;
+  min-height: 500px;
+}
+
+.youremail {
+  width: 200px;
+}

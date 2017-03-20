@@ -8,9 +8,9 @@ function clicked() {
 
     var button = $("#submitemail");
 
-    console.log("got the buttons: " + button)
+    //console.log("got the buttons: " + button)
 
-    button.on('click', clicked)
+   // button.on('click', clicked)
 
     button.on('click', function(){
       $(this).html("Submitted")
