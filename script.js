@@ -13,7 +13,9 @@ function clicked() {
    // button.on('click', clicked)
 
     button.on('click', function(){
-      $(this).html("Submitted")
+      $(this).html("Submitted");
+      $(".youremail").hide ();
+      $("#feedback").text ("Thanks for joining, we'll keep you updated!");
     })
 
 

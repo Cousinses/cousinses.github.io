@@ -45,6 +45,11 @@ li a:hover {
   text-decoration: none;
 }
 
+li .navbarlogoitem a:hover {
+  background-color: #0c1a1e;
+  border: 1px solid #f1f1f1;
+}
+
 .sitemap-ul li a {
   padding: 14px 0px;
 }
@@ -108,8 +113,8 @@ li a:hover {
 
 }
 
-.carousel-caption a:hover {
-  color: #0c1a1e;
+.item .carousel-caption a:hover {
+  color: white;
 }
 
 .jumbotron {
@@ -181,7 +186,7 @@ footer {
 
 .logo-footer img {
   max-width: 200px;
-  padding-top: 50px;
+  margin: 20px 0 50px 0;
 }
 
 .paddingtop-bottom {
@@ -259,6 +264,8 @@ ul.contact li {
   margin: 90px 0px 0px 30px;
 }
 
+/* footer end */
+
 a.anchor {
     display: block;
     position: relative;
@@ -272,11 +279,22 @@ a.anchor {
 }
 
 .form-container {
-  padding-top: 70px;
-  margin-left: 30px;
-  min-height: 500px;
+  padding: 60px 0px 60px 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  min-height: 600px;
+  background-color: rgba(160, 163, 164, 0.1);
+}
+
+.sub-btn {
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .youremail {
   width: 200px;
+  display: block;
+  padding: 5px 5px;
+  margin: 10px 0px;
 }
